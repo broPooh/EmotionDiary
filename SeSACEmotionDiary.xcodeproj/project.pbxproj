@@ -16,6 +16,7 @@
 		1BD15767281BAA5D00DD05CB /* SeSACEmotionDiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD15766281BAA5D00DD05CB /* SeSACEmotionDiaryTests.swift */; };
 		1BD15771281BAA5D00DD05CB /* SeSACEmotionDiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD15770281BAA5D00DD05CB /* SeSACEmotionDiaryUITests.swift */; };
 		1BD15773281BAA5D00DD05CB /* SeSACEmotionDiaryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD15772281BAA5D00DD05CB /* SeSACEmotionDiaryUITestsLaunchTests.swift */; };
+		1BD15780281BC2C500DD05CB /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1577F281BC2C500DD05CB /* OneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1BD1576C281BAA5D00DD05CB /* SeSACEmotionDiaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeSACEmotionDiaryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BD15770281BAA5D00DD05CB /* SeSACEmotionDiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACEmotionDiaryUITests.swift; sourceTree = "<group>"; };
 		1BD15772281BAA5D00DD05CB /* SeSACEmotionDiaryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeSACEmotionDiaryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1BD1577F281BC2C500DD05CB /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				1BD15751281BAA5C00DD05CB /* SceneDelegate.swift */,
 				1BD15753281BAA5C00DD05CB /* ViewController.swift */,
 				1BD15755281BAA5C00DD05CB /* Main.storyboard */,
+				1BD1577F281BC2C500DD05CB /* OneViewController.swift */,
 				1BD15758281BAA5D00DD05CB /* Assets.xcassets */,
 				1BD1575A281BAA5D00DD05CB /* LaunchScreen.storyboard */,
 				1BD1575D281BAA5D00DD05CB /* Info.plist */,
@@ -261,6 +264,7 @@
 				1BD15754281BAA5C00DD05CB /* ViewController.swift in Sources */,
 				1BD15750281BAA5C00DD05CB /* AppDelegate.swift in Sources */,
 				1BD15752281BAA5C00DD05CB /* SceneDelegate.swift in Sources */,
+				1BD15780281BC2C500DD05CB /* OneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
