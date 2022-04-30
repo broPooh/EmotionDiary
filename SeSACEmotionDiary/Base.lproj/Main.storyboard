@@ -66,6 +66,262 @@
             </objects>
             <point key="canvasLocation" x="2271.0144927536235" y="103.79464285714285"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="Eg7-lc-ihY">
+            <objects>
+                <navigationController id="FxX-P3-3A7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7pe-I8-U43"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6xf-el-C82">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rYx-rs-RcR" kind="relationship" relationship="rootViewController" id="ahC-cE-Q4F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HF5-ga-G9R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-145" y="-613"/>
+        </scene>
+        <!--EmotionDiary-->
+        <scene sceneID="g4u-VY-Mo9">
+            <objects>
+                <viewController id="rYx-rs-RcR" customClass="EmtionViewController" customModule="SeSACEmotionDiary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UVg-tx-Wjf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="qaF-MF-MAV">
+                                <rect key="frame" x="27" y="220" width="360" height="456.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lgQ-Vn-b6c">
+                                        <rect key="frame" x="0.0" y="0.0" width="360" height="120"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mono_slime1" translatesAutoresizingMaskIntoConstraints="NO" id="bet-97-gk8">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="120"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mono_slime2" translatesAutoresizingMaskIntoConstraints="NO" id="3kb-0G-Erg">
+                                                <rect key="frame" x="122.5" y="0.0" width="115" height="120"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mono_slime3" translatesAutoresizingMaskIntoConstraints="NO" id="mG0-7e-ZdQ">
+                                                <rect key="frame" x="245.5" y="0.0" width="114.5" height="120"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="bOR-wH-6VD"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WSf-Np-yiP">
+                                        <rect key="frame" x="0.0" y="127" width="360" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="행복해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBF-Lp-L81">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="0b3-SM-dfb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사랑해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQr-SY-abG">
+                                                <rect key="frame" x="120" y="0.0" width="120" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="Aen-gD-KUj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPv-Q3-Fb8">
+                                                <rect key="frame" x="240" y="0.0" width="120" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="wQj-Cs-ker"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="GBF-Lp-L81" firstAttribute="top" secondItem="WSf-Np-yiP" secondAttribute="top" id="08Y-Dw-R0D"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZPv-Q3-Fb8" secondAttribute="bottom" id="0ci-uk-ax1"/>
+                                            <constraint firstAttribute="bottom" secondItem="GBF-Lp-L81" secondAttribute="bottom" id="FNz-4q-WMU"/>
+                                            <constraint firstAttribute="bottom" secondItem="TQr-SY-abG" secondAttribute="bottom" id="KoO-yp-Nxf"/>
+                                            <constraint firstItem="ZPv-Q3-Fb8" firstAttribute="leading" secondItem="TQr-SY-abG" secondAttribute="trailing" id="Ozt-YD-vQb"/>
+                                            <constraint firstItem="TQr-SY-abG" firstAttribute="top" secondItem="WSf-Np-yiP" secondAttribute="top" id="qcU-3p-i0t"/>
+                                            <constraint firstItem="GBF-Lp-L81" firstAttribute="leading" secondItem="WSf-Np-yiP" secondAttribute="leading" id="viO-H7-iYs"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZPv-Q3-Fb8" secondAttribute="trailing" id="wRu-g2-2Ed"/>
+                                            <constraint firstItem="ZPv-Q3-Fb8" firstAttribute="top" secondItem="WSf-Np-yiP" secondAttribute="top" id="yfm-AU-Gpx"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1Mk-eq-eQA">
+                                        <rect key="frame" x="0.0" y="154.5" width="360" height="120"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mono_slime4" translatesAutoresizingMaskIntoConstraints="NO" id="xZ8-GQ-HcL">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="120"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mono_slime5" translatesAutoresizingMaskIntoConstraints="NO" id="ek3-t5-MCO">
+                                                <rect key="frame" x="122.5" y="0.0" width="115" height="120"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mono_slime6" translatesAutoresizingMaskIntoConstraints="NO" id="LbH-b2-QlU">
+                                                <rect key="frame" x="245.5" y="0.0" width="114.5" height="120"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="1qH-sL-Wdp"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="i8v-4O-IDi">
+                                        <rect key="frame" x="0.0" y="281.5" width="360" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="당황해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h7-mO-Czj">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="Mkm-qZ-EJ8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="속상해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv8-Po-Zb9">
+                                                <rect key="frame" x="120" y="0.0" width="120" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="cPe-d8-DsG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="졸려해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzB-1F-wzF">
+                                                <rect key="frame" x="240" y="0.0" width="120" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="feC-Yx-WEc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="0h7-mO-Czj" secondAttribute="bottom" id="88e-9H-Ssq"/>
+                                            <constraint firstItem="0h7-mO-Czj" firstAttribute="leading" secondItem="i8v-4O-IDi" secondAttribute="leading" id="9Zl-Qy-rsc"/>
+                                            <constraint firstAttribute="bottom" secondItem="xzB-1F-wzF" secondAttribute="bottom" id="Y0E-AI-eiV"/>
+                                            <constraint firstItem="0h7-mO-Czj" firstAttribute="top" secondItem="i8v-4O-IDi" secondAttribute="top" id="ddt-4u-cTT"/>
+                                            <constraint firstAttribute="trailing" secondItem="xzB-1F-wzF" secondAttribute="trailing" id="fG8-l3-j5C"/>
+                                            <constraint firstItem="xzB-1F-wzF" firstAttribute="leading" secondItem="Xv8-Po-Zb9" secondAttribute="trailing" id="omD-3J-u9S"/>
+                                            <constraint firstItem="xzB-1F-wzF" firstAttribute="top" secondItem="i8v-4O-IDi" secondAttribute="top" id="piY-Sf-oGp"/>
+                                            <constraint firstItem="Xv8-Po-Zb9" firstAttribute="top" secondItem="i8v-4O-IDi" secondAttribute="top" id="uZc-Xz-wv7"/>
+                                            <constraint firstAttribute="bottom" secondItem="Xv8-Po-Zb9" secondAttribute="bottom" id="w7H-kG-AUa"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qrI-HX-Ihb">
+                                        <rect key="frame" x="0.0" y="309" width="360" height="120"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mono_slime7" translatesAutoresizingMaskIntoConstraints="NO" id="Wvg-k6-2qW">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.5" height="120"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mono_slime8" translatesAutoresizingMaskIntoConstraints="NO" id="pYm-aG-UtJ">
+                                                <rect key="frame" x="122.5" y="0.0" width="115" height="120"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mono_slime9" translatesAutoresizingMaskIntoConstraints="NO" id="hQd-FF-1hD">
+                                                <rect key="frame" x="245.5" y="0.0" width="114.5" height="120"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="1OI-rO-CDm"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="heL-QP-oZP">
+                                        <rect key="frame" x="0.0" y="436" width="360" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="심심해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJ2-SR-0wF">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="Alr-Ps-7fr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="우울해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PG-St-Ymn">
+                                                <rect key="frame" x="120" y="0.0" width="120" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="Ube-xJ-tLq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="슬퍼해" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3V-VS-bCy">
+                                                <rect key="frame" x="240" y="0.0" width="120" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="JOY-gD-eWu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="n3V-VS-bCy" secondAttribute="bottom" id="Koo-2r-olV"/>
+                                            <constraint firstItem="n3V-VS-bCy" firstAttribute="leading" secondItem="8PG-St-Ymn" secondAttribute="trailing" id="Ksm-gQ-iHR"/>
+                                            <constraint firstItem="n3V-VS-bCy" firstAttribute="top" secondItem="heL-QP-oZP" secondAttribute="top" id="P1y-7S-tYa"/>
+                                            <constraint firstItem="xJ2-SR-0wF" firstAttribute="top" secondItem="heL-QP-oZP" secondAttribute="top" id="StN-Nd-8GU"/>
+                                            <constraint firstAttribute="bottom" secondItem="8PG-St-Ymn" secondAttribute="bottom" id="a6P-LD-wFE"/>
+                                            <constraint firstItem="8PG-St-Ymn" firstAttribute="top" secondItem="heL-QP-oZP" secondAttribute="top" id="bEc-G2-Rch"/>
+                                            <constraint firstItem="xJ2-SR-0wF" firstAttribute="leading" secondItem="heL-QP-oZP" secondAttribute="leading" id="e1M-jm-CST"/>
+                                            <constraint firstAttribute="bottom" secondItem="xJ2-SR-0wF" secondAttribute="bottom" id="vRL-g2-M4v"/>
+                                            <constraint firstAttribute="trailing" secondItem="n3V-VS-bCy" secondAttribute="trailing" id="wRn-CO-VWL"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ozq-6o-AiI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qaF-MF-MAV" firstAttribute="centerY" secondItem="UVg-tx-Wjf" secondAttribute="centerY" id="SIZ-dK-2wT"/>
+                            <constraint firstItem="qaF-MF-MAV" firstAttribute="centerX" secondItem="UVg-tx-Wjf" secondAttribute="centerX" id="nOM-Ih-yHg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="EmotionDiary" id="rfM-y6-QXF">
+                        <barButtonItem key="rightBarButtonItem" title="reset" id="oFS-TL-tJa">
+                            <connections>
+                                <action selector="resetBtnClicked:" destination="rYx-rs-RcR" id="CT7-3Z-vgL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="emotion1" destination="bet-97-gk8" id="RuY-WN-HJ3"/>
+                        <outlet property="emotion2" destination="3kb-0G-Erg" id="2gK-wL-B8d"/>
+                        <outlet property="emotion3" destination="mG0-7e-ZdQ" id="DLD-SJ-GW9"/>
+                        <outlet property="emotion4" destination="xZ8-GQ-HcL" id="YRI-IO-9FH"/>
+                        <outlet property="emotion5" destination="ek3-t5-MCO" id="k7V-1c-6Ne"/>
+                        <outlet property="emotion6" destination="LbH-b2-QlU" id="G9o-jB-7jq"/>
+                        <outlet property="emotion7" destination="Wvg-k6-2qW" id="6EY-LU-Inn"/>
+                        <outlet property="emotion8" destination="pYm-aG-UtJ" id="WTl-bs-YXd"/>
+                        <outlet property="emotion9" destination="hQd-FF-1hD" id="KfS-D9-cf2"/>
+                        <outlet property="emotionLabel1" destination="GBF-Lp-L81" id="Ee1-Pm-dN3"/>
+                        <outlet property="emotionLabel2" destination="TQr-SY-abG" id="ypc-zt-Mwt"/>
+                        <outlet property="emotionLabel3" destination="ZPv-Q3-Fb8" id="M0U-lA-3rg"/>
+                        <outlet property="emotionLabel4" destination="0h7-mO-Czj" id="aW1-ds-aq0"/>
+                        <outlet property="emotionLabel5" destination="Xv8-Po-Zb9" id="W4d-Es-IPK"/>
+                        <outlet property="emotionLabel6" destination="xzB-1F-wzF" id="P34-LM-yAa"/>
+                        <outlet property="emotionLabel7" destination="xJ2-SR-0wF" id="wIk-oh-OCK"/>
+                        <outlet property="emotionLabel8" destination="8PG-St-Ymn" id="02d-4W-vlT"/>
+                        <outlet property="emotionLabel9" destination="n3V-VS-bCy" id="MYa-eQ-Esv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="du9-Um-Vxo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="669.56521739130437" y="-618.08035714285711"/>
+        </scene>
         <!--첫번째 화면-->
         <scene sceneID="bMv-SB-c0s">
             <objects>
@@ -218,10 +474,12 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="miQ-5e-66l" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NHB-de-4ER">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="FxX-P3-3A7" kind="relationship" relationship="viewControllers" id="w7i-qI-1JO"/>
                         <segue destination="5NN-Hc-m2i" kind="relationship" relationship="viewControllers" id="hO5-yh-P2H"/>
                         <segue destination="xui-SX-qCF" kind="relationship" relationship="viewControllers" id="VSJ-lf-s30"/>
                         <segue destination="ir5-gt-Nlh" kind="relationship" relationship="viewControllers" id="F5H-HE-fEI"/>
@@ -300,6 +558,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="mono_slime1" width="278" height="258"/>
+        <image name="mono_slime2" width="278" height="258"/>
+        <image name="mono_slime3" width="278" height="258"/>
+        <image name="mono_slime4" width="278" height="258"/>
+        <image name="mono_slime5" width="278" height="258"/>
+        <image name="mono_slime6" width="278" height="258"/>
+        <image name="mono_slime7" width="278" height="258"/>
+        <image name="mono_slime8" width="278" height="258"/>
+        <image name="mono_slime9" width="278" height="258"/>
         <image name="rectangle.portrait.and.arrow.right" catalog="system" width="128" height="108"/>
         <image name="square.and.arrow.up.circle.fill" catalog="system" width="128" height="121"/>
         <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
