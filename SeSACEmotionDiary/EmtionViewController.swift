@@ -33,9 +33,19 @@ class EmtionViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //1. 테두리 색상
+        //emotionLabel1.layer.borderColor = UIColor.red.cgColor
+        
+        //2. 커스텀 컬러(RGB 컬러를 사용중 0~255)
+        //emotionLabel1.backgroundColor = UIColor(red: 174/255, green: 235/255, blue: 190/255, alpha: 0.8)
+        //emotionLabel1.backgroundColor = UIColor(named: "contentBackground")
 
         initEmotionData()
         addImageViewClickedEvent()
+        
+        let standard = UserDefaults.standard
+        print(standard.dictionaryRepresentation())
     }
     
     func addImageViewClickedEvent() {

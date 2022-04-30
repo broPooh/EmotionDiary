@@ -19,6 +19,9 @@
 		1BD15780281BC2C500DD05CB /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD1577F281BC2C500DD05CB /* OneViewController.swift */; };
 		1BD157D6281CCEBF00DD05CB /* EmtionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD157D5281CCEBF00DD05CB /* EmtionViewController.swift */; };
 		1BD157D8281CD93F00DD05CB /* EmotionEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD157D7281CD93F00DD05CB /* EmotionEnum.swift */; };
+		1BD157DC281CF1F400DD05CB /* HomeExample.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BD157DB281CF1F400DD05CB /* HomeExample.storyboard */; };
+		1BD157E0281D1B2B00DD05CB /* DDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD157DF281D1B2B00DD05CB /* DDayViewController.swift */; };
+		1BD157E2281D22F400DD05CB /* EmotionButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD157E1281D22F400DD05CB /* EmotionButtonViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		1BD1577F281BC2C500DD05CB /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
 		1BD157D5281CCEBF00DD05CB /* EmtionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmtionViewController.swift; sourceTree = "<group>"; };
 		1BD157D7281CD93F00DD05CB /* EmotionEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionEnum.swift; sourceTree = "<group>"; };
+		1BD157DB281CF1F400DD05CB /* HomeExample.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeExample.storyboard; sourceTree = "<group>"; };
+		1BD157DF281D1B2B00DD05CB /* DDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DDayViewController.swift; sourceTree = "<group>"; };
+		1BD157E1281D22F400DD05CB /* EmotionButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionButtonViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 				1BD15751281BAA5C00DD05CB /* SceneDelegate.swift */,
 				1BD15753281BAA5C00DD05CB /* ViewController.swift */,
 				1BD15755281BAA5C00DD05CB /* Main.storyboard */,
+				1BD157E1281D22F400DD05CB /* EmotionButtonViewController.swift */,
+				1BD157DF281D1B2B00DD05CB /* DDayViewController.swift */,
+				1BD157DB281CF1F400DD05CB /* HomeExample.storyboard */,
 				1BD157D5281CCEBF00DD05CB /* EmtionViewController.swift */,
 				1BD1577F281BC2C500DD05CB /* OneViewController.swift */,
 				1BD15758281BAA5D00DD05CB /* Assets.xcassets */,
@@ -242,6 +251,7 @@
 			files = (
 				1BD1575C281BAA5D00DD05CB /* LaunchScreen.storyboard in Resources */,
 				1BD15759281BAA5D00DD05CB /* Assets.xcassets in Resources */,
+				1BD157DC281CF1F400DD05CB /* HomeExample.storyboard in Resources */,
 				1BD15757281BAA5C00DD05CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +282,8 @@
 				1BD157D8281CD93F00DD05CB /* EmotionEnum.swift in Sources */,
 				1BD15752281BAA5C00DD05CB /* SceneDelegate.swift in Sources */,
 				1BD15780281BC2C500DD05CB /* OneViewController.swift in Sources */,
+				1BD157E0281D1B2B00DD05CB /* DDayViewController.swift in Sources */,
+				1BD157E2281D22F400DD05CB /* EmotionButtonViewController.swift in Sources */,
 				1BD157D6281CCEBF00DD05CB /* EmtionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +461,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53Z24SDX77;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSACEmotionDiary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -476,6 +489,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 53Z24SDX77;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SeSACEmotionDiary/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
